@@ -27,7 +27,7 @@ const Bookmarks: React.FC = () => {
 
   const deleteBookmark = (id: string) => {
     setBookmarks((prevBookmarks) => prevBookmarks.filter((bm) => bm.id !== id));
-    console.log(id);
+    // console.log(id);
   };
 
   const clearBookmarks = () => {
@@ -53,7 +53,7 @@ const Bookmarks: React.FC = () => {
   useEffect(() => {
     const json = JSON.stringify(bookmarks);
     localStorage.setItem("bookmarks", json);
-    console.log("Bookmarks stored in local storage:", bookmarks);
+    // console.log("Bookmarks stored in local storage:", bookmarks);
   }, [bookmarks]);
   return (
     <div className="bookmarks ">
