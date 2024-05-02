@@ -10,12 +10,14 @@ interface BookmarkListProps {
   }[];
   deleteBookmark: (id: string) => void;
   openForm: () => void;
+  clearBookmarks: () => void;
 }
 
 const BookmarkList: React.FC<BookmarkListProps> = ({
   bookmarks,
   deleteBookmark,
   openForm,
+  clearBookmarks,
 }) => {
   return (
     <section className="bookmark-list bg-gradient-to-r from-slate-500 to-yellow-100">
@@ -49,6 +51,12 @@ const BookmarkList: React.FC<BookmarkListProps> = ({
             <Bookmark key={bm.id} bm={bm} deleteBookmark={deleteBookmark} />
           ))}
         </ul>
+        <button
+          onClick={clearBookmarks}
+          className="ext-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-96 ml-20"
+        >
+          Clear All
+        </button>
       </div>
     </section>
   );
