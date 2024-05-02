@@ -7,7 +7,7 @@ const Greeting: React.FC = () => {
   const [userName, setUserName] = useState<string>("");
   const [isMade, setIsMade] = useState<boolean>(true);
 
-  const submitUserName = (e: React.FormEvent<HTMLFormElement>) => {
+  const submitUserName = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(userName);
     setIsMade(true);
@@ -29,6 +29,7 @@ const Greeting: React.FC = () => {
       setUserName(loadedItem);
     }
   }, []);
+  
 
   useEffect(() => {
     const json = JSON.stringify(userName);
@@ -36,8 +37,8 @@ const Greeting: React.FC = () => {
   }, [userName]);
 
   useEffect(() => {
-    let d = new Date();
-    let h = d.getHours();
+    const d = new Date();
+    const h = d.getHours();
 
     if (h > 4 && h < 12) {
       setGreetingMessage("Good Morning");
@@ -49,7 +50,7 @@ const Greeting: React.FC = () => {
   }, []);
 
   return (
-    <div className="time-card greeting">
+    <div className="time-card greeting bg-gradient-to-b from-gray-900 to-gray-600 ">
       <span>{greetingMessage}</span>
       <br />
       {!isMade ? (
