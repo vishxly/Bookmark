@@ -1,6 +1,6 @@
 import "./App.css";
 import Bookmarks from "./Components/Bookmarks/Bookmarks";
-import Greeting from "./Components/Greeting/Greeting";
+// import Greeting from "./Components/Greeting/Greeting";
 import Time from "./Components/Time/Time";
 import Todo from "./Components/Todo/Todo";
 import Weather from "./Components/Weather/Weather";
@@ -16,9 +16,9 @@ function App() {
         <div className="item2">
           <Time />
         </div>
-        <div className="item3">
+        {/* <div className="item3">
           <Greeting />
-        </div>
+        </div> */}
         <div className="item4">
           <Weather />
         </div>
