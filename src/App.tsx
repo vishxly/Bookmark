@@ -1,5 +1,5 @@
 import "./App.css";
-import Bookmarks from "./Components/Bookmarks/Bookmarks";
+// import Bookmarks from "./Components/Bookmarks/Bookmarks";
 import Greeting from "./Components/Greeting/Greeting";
 import Time from "./Components/Time/Time";
 import Todo from "./Components/Todo/Todo";
@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="app-wrapper bg-gradient-to-r from-rose-100 to-teal-100">
       <div className="App">
-        <div className="item1">
+        {/* <div className="item1">
           <Bookmarks />
-        </div>
+        </div> */}
         <div className="item2">
           <Time />
         </div>
