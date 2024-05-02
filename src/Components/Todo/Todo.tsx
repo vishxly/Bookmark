@@ -56,7 +56,7 @@ const Todo: React.FC = () => {
   };
 
   useEffect(() => {
-    console.log(todos);
+    // console.log(todos);
   }, [todos]);
 
   const setInputFocus = (input: HTMLInputElement | null) => {

@@ -9,7 +9,6 @@ const Greeting: React.FC = () => {
 
   const submitUserName = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(userName);
     setIsMade(true);
   };
 
@@ -29,7 +28,6 @@ const Greeting: React.FC = () => {
       setUserName(loadedItem);
     }
   }, []);
-  
 
   useEffect(() => {
     const json = JSON.stringify(userName);
