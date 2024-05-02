@@ -49,7 +49,7 @@ const Greeting: React.FC = () => {
   }, []);
 
   return (
-    <div className="time-card greeting bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r ">
+    <div className="time-card greeting bg-gradient-to-b from-gray-900 to-gray-600 ">
       <span>{greetingMessage}</span>
       <br />
       {!isMade ? (

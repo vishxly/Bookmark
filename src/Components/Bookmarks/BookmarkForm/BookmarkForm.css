@@ -14,7 +14,7 @@
   
   .form-control label,
   .form-control input {
-    display: block;
+    /* display: block; */
     width: 100%;
   }
   

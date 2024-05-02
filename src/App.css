@@ -47,7 +47,7 @@
 .item6 {
   grid-column: 4;
 }
-
+/* 
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -60,4 +60,4 @@
 ::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5px;
-}
+} */
